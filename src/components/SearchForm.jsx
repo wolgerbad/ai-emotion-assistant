@@ -73,12 +73,15 @@ export default function SearchForm() {
       <form className="relative -mb-4" onSubmit={handleSubmit}>
         <input
           type="text"
+          disabled={isLoading}
           value={userInput}
           onChange={(e) => setUserInput(e.target.value)}
           className={`px-4 py-2 border-2 ${
+            isLoading ? 'cursor-not-allowed' : ''
+          } ${
             error ? 'border-red-600' : 'border-neutral-500'
           }  font-semibold rounded-full outline-0 w-full bg-neutral-600`}
-        ></input>
+        />
         <button
           type="submit"
           className="absolute right-4 top-1/2 -translate-y-1/2"

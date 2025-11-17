@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 export default function MobileNav() {
   return (
-    <div className="fixed bottom-1 lg:bottom-4 min-w-78 left-1/2 -translate-x-1/2 rounded-full flex justify-between items-center px-6 h-16 z-50 bg-linear-to-br from-orange-500 to-sky-800 font-semibold">
+    <div className="absolute bottom-1 lg:bottom-4 min-w-78 left-1/2 -translate-x-1/2 rounded-full flex justify-between items-center px-6 h-16 z-50 bg-linear-to-br from-orange-500 to-sky-800 font-semibold">
       <Link to="/" className="flex flex-col items-center">
         <PiCirclesThreePlus className="text-xl" />
         Anasayfa

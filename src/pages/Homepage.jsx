@@ -11,7 +11,7 @@ function Homepage() {
   return (
     <div className="h-screen overflow-hidden grid grid-cols-4 gap-8">
       <Sidebar />
-      <div className="flex flex-col items-center h-screen col-start-1 lg:col-start-2 col-span-full px-5 lg:px-40 py-30">
+      <div className="relative flex flex-col items-center h-screen col-start-1 lg:col-start-2 col-span-full px-5 lg:px-40 py-30">
         {!todaysData && (
           <h1 className="text-4xl font-bold text-center">
             AI-Asistan'a Hoş Geldin!
@@ -32,8 +32,8 @@ function Homepage() {
             </p>
           )}
         </div>
+        <MobileNav />
       </div>
-      <MobileNav />
     </div>
   );
 }
