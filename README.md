@@ -1,12 +1,30 @@
-# React + Vite
+# AI Emotion Assistant [![Live Demo](https://img.shields.io/badge/-Live%20Demo-green?style=flat-square)](https://ai-emotion-assistant.vercel.app/) [![Repo](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github)](https://github.com/wolgerbad/ai-emotion-assistant)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI emotion assistant is an app that detects users emotion based on what they wrote and give suggestions based on that.
 
-Currently, two official plugins are available:
+## 🧩 Getting Started
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/wolgerbad/blog
+2. Install dependencies
+   ```bash
+   npm install
+3. Run locally
+   ```bash
+   npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌍 Live Demo
+🔗 [Visit Live Site](https://ai-emotion-assistant.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+AI Model/API Endpoint: HuggingFace | nlptown/bert-base-multilingual-uncased-sentiment
+What it does? Based on what user wrote, api returns stars out of 5. 4-5(Positive), 3(Neutral), 1-2(Negative). Based on that, application returns overview of his situation and suggestions. User's can see their last 7 days results on weekly-overview page.
+
+## Screenshots
+
+<img width="1919" height="902" alt="Ekran görüntüsü 2025-11-17 072731" src="https://github.com/user-attachments/assets/c22fa998-3e97-4830-9d3d-03bdfd21dcac" />
+
+
+
+<img width="1919" height="897" alt="Ekran görüntüsü 2025-11-17 082528" src="https://github.com/user-attachments/assets/fd874461-e94e-40ce-92bc-7532f92f4a40" />
