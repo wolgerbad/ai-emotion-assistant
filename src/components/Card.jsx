@@ -1,4 +1,7 @@
+import { useState } from 'react';
+
 export default function Card({ backgroundStyle, data }) {
+  const [showMore, setShowMore] = useState(false);
   return (
     <div
       className={`${
@@ -17,9 +20,10 @@ export default function Card({ backgroundStyle, data }) {
         <p className="text-xs uppercase tracking-wider opacity-70 font-semibold">
           mesaj
         </p>
-        <p className="text-white">
-          {data.message.slice(0, 30)}
-          {data.message.length > 30 && '...'}
+        <p className="text-white" onClick={() => setShowMore((prev) => !prev)}>
+          {!showMore && data.message.slice(0, 80)}
+          {!showMore && data.message.length > 80 && '...'}
+          {showMore && data.message}
         </p>
       </div>
       <div className="flex flex-col gap-1">
